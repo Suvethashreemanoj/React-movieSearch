@@ -1,12 +1,72 @@
-# React + Vite
+# React Movie Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application to search for movies and view popular movies using the TMDb API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Search for movies by title
+- View popular movies on homepage
+- Responsive movie card grid
+- Add movies to favorites (UI only)
+- Loading and error handling
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- TMDb API
+- CSS (custom styling)
+- Vite
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Suvethashreemanoj/React-movieSearch.git
+   cd React-movieSearch/frontend
+   ```
+
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+3. Add your TMDb API key in `src/services/api.js`:
+   ```js
+   const API_KEY = 'your_tmdb_api_key_here';
+   ```
+
+### Running the App
+
+```sh
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Project Structure
+
+```
+frontend/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── css/
+│   ├── pages/
+│   ├── services/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── ...
+├── package.json
+└── README.md
+```
+
+## License
+
+This project is licensed under the MIT License.
