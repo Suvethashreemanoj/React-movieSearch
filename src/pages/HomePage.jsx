@@ -28,7 +28,22 @@ function Home() {
     }, []);
     const handleSearch = async (e) =>{
         e.preventDefault();
+        //prevent loading if search is empty or if already loading for a differnt movie so we set loading to TRUE.
         if(!searchQuery.trim()) return;
+        if(loading) return;    
+        setLoading(true);
+        try {
+            const searchResults = await getSearchMovies(searchQuery);
+            setMovies(searchResults);  
+        }
+         catch (error) {
+            console.log(error);
+            setError("Failed to search movie...");
+        }
+        finally{
+            setLoading(false);
+        }
+        searchQuery("");
     }
 
     
