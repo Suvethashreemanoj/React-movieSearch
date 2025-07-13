@@ -1,11 +1,15 @@
-import {Link} from 'react-router-dom';
-import '../css/NavBar.css';
+import { Link } from 'react-router-dom';
+import '../css/Navbar.css';
+import filmroll from '../images/filmroll.png';
 
-function NavBar(){
-    return(
+function NavBar() {
+    return (
         <nav className='navbar'>
             <div className='navbar-brand'>
-                <Link to='/'>Movie App</Link>
+                <Link to='/'><img src={filmroll} alt="Filmroll" className="navbar-logo" /></Link>
+            </div>
+            <div className='navbar-title'>
+                MOVIESNOW
             </div>
             <div className='navbar-links'>
                 <Link to='/' className='navbar-link'>Home</Link>
@@ -14,4 +18,5 @@ function NavBar(){
         </nav>
     );
 }
+
 export default NavBar;

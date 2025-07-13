@@ -19,7 +19,7 @@
   padding: 0.75rem 1rem;
   border: none;
   border-radius: 4px;
-  background-color: #333;
+  background-color: #6b002f;
   color: white;
   font-size: 1rem;
   height: 48px; /* Add a fixed height for consistency */
@@ -32,7 +32,7 @@
 
 .search-button {
   padding: 0.75rem 1.5rem;
-  background-color: #e50914;
+  background-color: #006B3C;
   color: white;
   border-radius: 4px;
   font-weight: 500;
@@ -46,7 +46,7 @@
 }
 
 .search-button:hover {
-  background-color: #f40612;
+  background-color: #043c24;
 }
 
 

@@ -3,15 +3,16 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './css/App.css'
 import Home from './pages/HomePage.jsx';
-import Favorites from './pages/favorites.jsx';
+import Favorites from './pages/Favorites.jsx';
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar.jsx';
+import { MovieProvider } from './context/MovieContext.jsx';
 
 
 function App() {
  
   return(
-    <div>
+    <MovieProvider>
       <NavBar />
       <main>
         <Routes>
@@ -19,7 +20,7 @@ function App() {
           <Route path='/favorites' element={<Favorites />}></Route>
         </Routes>
       </main>
-    </div>
+    </MovieProvider>
   );
 }
 
